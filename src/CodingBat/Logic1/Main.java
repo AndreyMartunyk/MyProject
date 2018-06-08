@@ -22,15 +22,26 @@ public class Main {
         return 1;
     }
 
-   
+    public int maxMod5(int a, int b) {
+        int max, min;
+        if (a > b) {
+            max = a;
+            min = b;
+        }
+        else if (a < b) {
+            max = b;
+            min = a;
+        }
+        else {
+            return 0;
+        }
 
-
-
-
-
-
-
-
+        if (max % 5 == min % 5) {
+            max = min;
+        }
+        return max;
+    }
+    
 }
 
 
